@@ -39,38 +39,11 @@ User Query → FastAPI Backend → MySQL Product Database → Prompt Engineering
 * python-dotenv
 * requests
 
-## API Endpoint
 
-### POST /chat
 
-Request:
 
-```json
-{
-  "session_id": "user123",
-  "message": "Tell me about your products"
-}
-```
 
-Response:
 
-```json
-{
-  "response": "Generated AI response"
-}
-```
-
-## Environment Variables
-
-Create a `.env` file:
-
-```env
-GROQ_API_KEY=your_groq_api_key
-
-MYSQL_USER=root
-MYSQL_PASSWORD=password
-MYSQL_DATABASE=product_db
-```
 
 ## Database Tables
 
@@ -90,17 +63,6 @@ MYSQL_DATABASE=product_db
 | user_message | TEXT    |
 | bot_response | TEXT    |
 
-## Installation
-
-```bash
-git clone https://github.com/sravsjyos/example_chat.git
-
-cd example_chat
-
-pip install -r requirements.txt
-
-uvicorn main:app --reload
-```
 
 ## Future Enhancements
 
